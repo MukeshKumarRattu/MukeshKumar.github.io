@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 
 <html>
 <head>
@@ -6,164 +6,212 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        #mySidenav a {
+            position: fixed;
+            left: -99px;
+            transition: 0.7s;
+            padding: 13px;
+            width: 100px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            border-radius: 0 5px 5px 0;
+        }
+
+            #mySidenav a:hover {
+                left: 0;
+            }
+
+        #about {
+            top: 20px;
+            background-color: #4CAF50;
+        }
+
+        #blog {
+            top: 80px;
+            background-color: #2196F3;
+        }
+
+        #projects {
+            top: 140px;
+            background-color: #f44336;
+        }
+
+        #contact {
+            top: 200px;
+            background-color: #555
+        }
+    </style>
 </head>
-	<body class="is-preload">
+<body class="is-preload">
+    
+    <!-- Header -->
+    <div id="header">
 
-		<!-- Header -->
-			<div id="header">
-                <img src="images/mypic.png" alt="" width="200" height="200" />
-                <h1>MUKESH KUMAR</h1>
-                <p>IoT Hardware Developer with over 3 years of experience in <br />IoT(Internet of Things) end to end solution.<br />Contact: <a href="tel:+15148097175">+1 514.809.7175</a>
-                </p>
-			</div>
+        <img src="images/mypic.png" alt="" width="200" height="200" />
+        <h1>MUKESH KUMAR</h1>
+        <p>
+            IoT Hardware Developer with over 3 years of experience in <br />IoT(Internet of Things) end to end solution.<br />Contact: <a href="tel:+15148097175">+1 514.809.7175</a>
+        </p>
+    </div>
 
-		<!-- Main -->
-            <div id="main">
+    <!-- Main -->
+    <div id="main">
+        <div id="mySidenav" class="sidenav">
+            <a href="#" id="about">About</a>
+            <a href="#" id="blog">Blog</a>
+            <a href="#" id="projects">Projects</a>
+            <a href="#" id="contact">Contact</a>
+        </div>
 
-                <header class="major container medium">
-                    <h2>
-                        I conduct experiments that
-                        <br />
-                        may or may not seriously
-                        <br />
-                        break the IoT field
-                    </h2>
-                    <p>Here are some of my latest works</p>
+        <header class="major container medium">
+            <h2>
+                About Me<br />
+            </h2>
+
+            <p>As of August 2019, I have been an IoT Developer in india for 3 years, and i am now pursuing 2 years of programming certification in canada to explore more about my interest.</p>
+            <p>Here are some of my latest works</p>
+
+        </header>
+        <div class="box alt container">
+            <section class="feature left">
+                <a href="./projects/Musify.html" class="image icon solid fa-signal"><img src="images/pic01.jpg" alt="" /></a>
+                <div class="content">
+                    <h3>Musify</h3>
+                    <p>Musify is an music streaming android app, which works same as Spotify. User can easily download online music to their playlist for free of cost.</p>
+                </div>
+            </section>
+            <section class="feature right">
+                <a href="./projects/Spywarrior.html" class="image icon solid fa-code"><img src="images/pic02.jpg" alt="" /></a>
+                <div class="content">
+                    <h3>Spywarrior</h3>
+                    <p>Spywarrior is a religious movies and songs streaming website, which allows users to watch online movies and download it.</p>
+                </div>
+            </section>
+            <section class="feature left">
+                <a href="./projects/TriggerNotifier.html" class="image icon solid fa-mobile-alt"><img src="images/pic03.jpg" alt="" /></a>
+                <div class="content">
+                    <h3>Trigger Notifier</h3>
+                    <p>Trigger Notifier is a IoT device, which sense the surroundings and Trigger signals to the connected devices and notify the user on Blynk app.</p>
+                </div>
+            </section>
+            <section class="feature right">
+                <a href="./projects/ESP32AUTHENTICATIONEYE.html" class="image icon solid fa-code"><img src="images/pic02.jpg" alt="" /></a>
+                <div class="content">
+                    <h3>Esp32 Authentication Eye</h3>
+                    <p>Fingerprint and Camera recogination device can be control Globally from Android app.</p>
+                </div>
+            </section>
+            <section class="feature left">
+                <a href="./projects/HomeAutomation.html" class="image icon solid fa-mobile-alt"><img src="images/pic03.jpg" alt="" /></a>
+                <div class="content">
+                    <h3>Home Automation</h3>
+                    <p>User can control home appliances globally from their smartphone.</p>
+                </div>
+            </section>
+        </div>
+
+        <! -- -->
+
+
+        <div class="box container">
+
+            <section>
+                <header>
+                    <h3>Education</h3>
 
                 </header>
+                <p>
+                    <b>Programming and Web Technologies, AEC</b>   (2019 - Present)<br /><i>ISI, L'institut Supérieur d'Informatique, Montreal</i><br /><br />
+                    <b>Computer Application, Bachelor</b>   (2018)<br /><i>GNA University, Punjab, India</i><br />
+                </p>
+            </section>
 
-                <div class="box alt container">
-                    <section class="feature left">
-                        <a href="./projects/Musify.html" class="image icon solid fa-signal"><img src="images/pic01.jpg" alt="" /></a>
-                        <div class="content">
-                            <h3>Musify</h3>
-                            <p>Musify is an music streaming android app, which works same as Spotify. User can easily download online music to their playlist for free of cost.</p>
-                        </div>
-                    </section>
-                    <section class="feature right">
-                        <a href="./projects/Spywarrior.html" class="image icon solid fa-code"><img src="images/pic02.jpg" alt="" /></a>
-                        <div class="content">
-                            <h3>Spywarrior</h3>
-                            <p>Spywarrior is a religious movies and songs streaming website, which allows users to watch online movies and download it.</p>
-                        </div>
-                    </section>
-                    <section class="feature left">
-                        <a href="./projects/TriggerNotifier.html" class="image icon solid fa-mobile-alt"><img src="images/pic03.jpg" alt="" /></a>
-                        <div class="content">
-                            <h3>Trigger Notifier</h3>
-                            <p>Trigger Notifier is a IoT device, which sense the surroundings and Trigger signals to the connected devices and notify the user on Blynk app.</p>
-                        </div>
-                    </section>
-                    <section class="feature right">
-                        <a href="./projects/ESP32AUTHENTICATIONEYE.html" class="image icon solid fa-code"><img src="images/pic02.jpg" alt="" /></a>
-                        <div class="content">
-                            <h3>Esp32 Authentication Eye</h3>
-                            <p>Fingerprint and Camera recogination device can be control Globally from Android app.</p>
-                        </div>
-                    </section>
-                    <section class="feature left">
-                        <a href="./projects/HomeAutomation.html" class="image icon solid fa-mobile-alt"><img src="images/pic03.jpg" alt="" /></a>
-                        <div class="content">
-                            <h3>Home Automation</h3>
-                            <p>User can control home appliances globally from their smartphone.</p>
-                        </div>
-                    </section>
-                </div>
+            <section>
+                <header>
+                    <h3>Technical Skills</h3>
+                </header>
+                <ul class="default">
+                    <li><b>Microcontroller Programming</b></li>
+                    <li><b>C++</b><br /></li>
+                    <li><b>Firebase</b><br /></li>
+                    <li><b>Java</b><br /></li>
+                    <li><b>Android</b><br /></li>
+                </ul>
+            </section>
+            <section>
+                <header>
+                    <h3>Work Experience</h3>
 
-                <! -- -->
+                </header>
+                <p>
+                    <b>IoT Tutor</b>   (2018 - 2019)<br /><i>NCM Institute, India</i><br /><br />
+                    <b>IoT Hardware Developer</b>   (2015 - 2018)<br /><i>Spyoti, Punjab, India</i><br />
+                </p>
+            </section>
 
-                
-    <div class="box container">
-        <header>
-            <h2>About Me</h2>
-            <p>As of August 2019, I have been a IoT Developer in india for 3 years, and i am now pursuing 2 years of programming certification in canada to explore more about my interest.</p>
-        </header>
-        <section>
-            <header>
-                <h3>Education</h3>
-                
-            </header>
-            <p>
-                <b>Programming and Web Technologies, AEC</b>   (2019 - Present)<br /><i>ISI, L'institut Supérieur d'Informatique, Montreal</i><br /><br />
-                <b>Computer Application, Bachelor</b>   (2018)<br /><i>GNA University, Punjab, India</i><br />
-            </p>
-        </section>
-        
-        <section>
-            <header>
-                <h3>Technical Skills</h3>
-            </header>
-            <ul class="default">
-                <li><b>Microcontroller Programming</b><br /> <progress id="file" value="90" max="100"> </progress> 90%</li>
-                <li><b>C++</b><br /> <progress id="file" value="85" max="100"> </progress> 85%</li>
-                <li><b>Firebase</b><br /> <progress id="file" value="95" max="100"> </progress> 95%</li>
-                <li><b>Java</b><br /> <progress id="file" value="70" max="100"> </progress> 70%</li>
-                <li><b>Android</b><br /> <progress id="file" value="80" max="100"> </progress> 80%</li>
+        </div>
+
+        <! -- -->
+
+        <footer class="major container medium">
+            <h3>Get to know more about me</h3>
+            <p>Here is my resume attached with the button below.</p>
+            <ul class="actions special">
+                <li><a href="./MukeshKumar_FinalResume.pdf" class="button" download>RESUME</a></li>
             </ul>
-        </section>
-        
+        </footer>
+
     </div>
-    
-                <! -- -->
 
-                <footer class="major container medium">
-                    <h3>Get to know more about me</h3>
-                    <p>Here is my resume attached with the button below.</p>
-                    <ul class="actions special">
-                        <li><a href="./MukeshKumar_FinalResume.pdf"  class="button" download>RESUME</a></li>
-                    </ul>
-                </footer>
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container medium">
 
-            </div>
+            <header class="major last">
+                <h2>Questions or comments?</h2>
+            </header>
 
-		<!-- Footer -->
-			<div id="footer">
-				<div class="container medium">
+            <p>Please feel free to email me in the below message box.</p>
 
-					<header class="major last">
-						<h2>Questions or comments?</h2>
-					</header>
+            <form method="post" action="mailto:mukeshkumarrattu@gmail.com">
+                <div class="row">
+                    <div class="col-6 col-12-mobilep">
+                        <input type="text" name="name" placeholder="Name" />
+                    </div>
+                    <div class="col-6 col-12-mobilep">
+                        <input type="email" name="email" placeholder="Email" />
+                    </div>
+                    <div class="col-12">
+                        <textarea name="message" placeholder="Message" rows="6"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <ul class="actions special">
+                            <li><input type="submit" value="Send Message" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
 
-					<p>Please feel free to email me in the below message box.</p>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/mukesh-kumar-16182a1b9/" class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
+                <li><a href="https://github.com/MukeshKumarRattu" class="icon brands fa-github"><span class="label">Github</span></a></li>
+            </ul>
 
-					<form method="post" action="mailto:mukeshkumarrattu@gmail.com">
-						<div class="row">
-							<div class="col-6 col-12-mobilep">
-								<input type="text" name="name" placeholder="Name" />
-							</div>
-							<div class="col-6 col-12-mobilep">
-								<input type="email" name="email" placeholder="Email" />
-							</div>
-							<div class="col-12">
-								<textarea name="message" placeholder="Message" rows="6"></textarea>
-							</div>
-							<div class="col-12">
-								<ul class="actions special">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
+            <ul class="copyright">
+                <li>&copy; Mukesh Kumar</li>
+            </ul>
 
-					<ul class="icons">
-						<li><a href="https://twitter.com/MukeshK29788254" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://www.facebook.com/spyrdxboy" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="https://github.com/MukeshKumarRattu" class="icon brands fa-github"><span class="label">Github</span></a></li>
-					</ul>
+        </div>
+    </div>
 
-					<ul class="copyright">
-						<li>&copy; Mukesh Kumar</li>
-					</ul>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-				</div>
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
