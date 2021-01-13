@@ -1,13 +1,45 @@
 ﻿<!DOCTYPE HTML>
 
 <html>
-	<head>
-        <title>ESP32 AUTHENTICATION EYE</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+<head>
+    <title>ESP32 AUTHENTICATION EYE</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style media="screen">
+
+        .img-holder {
+            max-width: 10em;
+            padding: 0.25em;
+            margin: auto;
+            border: 0.062em solid #999;
+            background-color: #fff;
+            box-shadow: inset 0 0 1em rgba( 0, 0, 0, 0.0 ), 0.25em 0.25em 0.25em rgba( 0, 0, 0, 0.3 );
+            transition: 0.5s ease-in-out;
+        }
+
+            .img-holder img {
+                display: block;
+                width: 100%;
+                height: auto;
+                border: 0.032em solid #000;
+                box-sizing: border-box;
+                transition: 0.5s ease-in-out;
+            }
+
+            .img-holder:hover {
+                max-width: 17em;
+                padding: 1em;
+                border-radius: 0.10em;
+                box-shadow: inset 0 0 1em rgba( 0, 0, 0, 0.3 ), 0.5em 0.5em 0.5em rgba( 0, 0, 0, 0.3 );
+            }
+
+                .img-holder:hover img {
+                    border-radius: 0.1em;
+                }
+    </style>
+</head>
 	<body class="is-preload">
 
 		<!-- Page Wrapper -->
@@ -31,12 +63,16 @@
 							</section>
 						<!-- Panel -->
 							<section class="panel color1">
-								<div class="intro joined">
+                                <div class="intro joined">
                                     <h2 class="major">About Esp32 Authentication Eye</h2>
-									<p>Esp32 is a microcontroller which comes with camera module, So This device can be used for authentication purpose like door lock. </p>
-								</div>
+                                    <p>Esp32 is a microcontroller which comes with camera module, So This device can be used for authentication purpose like door lock. </p>
+                                    <h4>Languages & Tech :</h4>
+                                    <p> Esp32, C++, Android, Arduino, Java, IoT, Firebase, SQLite</p>
+                                </div>
 								<div class="inner">
-									<img src="./images/Esp32.png" alt="" width="170" height="320" />
+                                    <div class="img-holder">
+                                        <img src="./images/Esp32.png" alt="" width="170" height="320" />
+                                    </div>
 								</div>
 							</section>
 
